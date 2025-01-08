@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculater</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 </head>
+
 <body>
-    
-    <div>
-        <input type="text"  id="cal">
-    </div>
-    <div>
-        <button onclick="btnCalculater('1')">1</button>
-        <button onclick="btnCalculater('2')">2</button>
-        <button onclick="btnCalculater('3')">3</button>
-        <button onclick="btnCalculater('+')">+</button>
-        <button onclick="btnCalculater('-')">-</button>
-        <button onclick="btnCalculater('=')">=</button>
+    <div class="calculator">
+        <div class="calhead">
+            <img src="images/Windows_Calculator_icon.png" width="20px" alt="calculator logo">
+            <span>Calculator</span>
+        </div>
+
+        <div class="cal-body">
+            <div class="input-container">
+                <input type="text" id="inputField" placeholder="0" readonly>
+            </div>
+            <div class="cal-row">
+                <button onclick="calBtn()">AC</button>
+                <button onclick="calBtn('C')">C</button>
+                <button onclick="calBtn('%')">%</button>
+                <button onclick="calBtn('C')"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+            <div class="cal-row">
+                <button onclick="calBtn('7')">7</button>
+                <button onclick="calBtn('8')">8</button>
+                <button onclick="calBtn('9')">9</button>
+                <button onclick="calBtn('*')">x</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="calBtn('4')">4</button>
+                <button onclick="calBtn('5')">5</button>
+                <button onclick="calBtn('6')">6</button>
+                <button onclick="calBtn('-')">-</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="calBtn('1')">1</button>
+                <button onclick="calBtn('2')">2</button>
+                <button onclick="calBtn('3')">3</button>
+                <button onclick="calBtn('+')">+</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="calBtn('00')">00</button>
+                <button onclick="calBtn('0')">0</button>
+                <button onclick="calBtn('.')">.</button>
+                <button onclick="calBtn('=')">=</button>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
