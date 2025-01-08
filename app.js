@@ -1,2 +1,6 @@
-let num0 = document.getElementById("num0")
-console.log(num0)
+
+function btnCalculater (char){
+let oo = document.getElementById("cal");
+oo.value = oo.value + char;
+console.log(char);
+}
