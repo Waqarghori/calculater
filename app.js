@@ -6,8 +6,10 @@ function calBtn(newChar) {
     if ((lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/")
         && (newChar === "+" || newChar === "-" || newChar === "*" || newChar === "/")) {
         cal.value = cal.value.slice(0, -1);
-        } else if (newChar == "=") {
+        } else if (newChar === "=") {
             cal.value = eval(cal.value);
+        }else if (newChar === "C"){
+            cal.value = "";
         } else {
             cal.value += newChar;
         }
