@@ -18,36 +18,37 @@
 
         <div class="cal-body">
             <div class="input-container">
-                <input type="text" id="inputField" placeholder="0" readonly>
+                <input type="text" id="input" placeholder="0" readonly>
             </div>
             <div class="cal-row">
-                <button onclick="calBtn('C')">C</button>
-                <button onclick="calBtn('/')"><i class="fa-solid fa-divide"></i></button>
-                <button onclick="calBtn('%')">%</button>
+                <button onclick="calculate(`c`)">C</button>
+                <button onclick="calculate(`/`)"><i class="fa-solid fa-divide"></i></button>
+                <button onclick="calculate(`%`)">%</button>
+                <button onclick="calculate(`bSpc`)"><i class="fa-solid fa-delete-left"></i></button>
             </div>
             <div class="cal-row">
-                <button onclick="calBtn('7')">7</button>
-                <button onclick="calBtn('8')">8</button>
-                <button onclick="calBtn('9')">9</button>
-                <button onclick="calBtn('*')">x</button>
+                <button onclick="calculate(`7`)">7</button>
+                <button onclick="calculate(`8`)">8</button>
+                <button onclick="calculate(`9`)">9</button>
+                <button onclick="calculate(`*`)">x</button>
             </div>
             <div class="cal-row">
-                <button onclick="calBtn('4')">4</button>
-                <button onclick="calBtn('5')">5</button>
-                <button onclick="calBtn('6')">6</button>
-                <button onclick="calBtn('-')">-</button>
+                <button onclick="calculate(`4`)">4</button>
+                <button onclick="calculate(`5`)">5</button>
+                <button onclick="calculate(`6`)">6</button>
+                <button onclick="calculate(`-`)">-</button>
             </div>
             <div class="cal-row">
-                <button onclick="calBtn('1')">1</button>
-                <button onclick="calBtn('2')">2</button>
-                <button onclick="calBtn('3')">3</button>
-                <button onclick="calBtn('+')">+</button>
+                <button onclick="calculate(`1`)">1</button>
+                <button onclick="calculate(`2`)">2</button>
+                <button onclick="calculate(`3`)">3</button>
+                <button onclick="calculate(`+`)">+</button>
             </div>
             <div class="cal-row">
-                <button onclick="calBtn('00')">00</button>
-                <button onclick="calBtn('0')">0</button>
-                <button onclick="calBtn('.')">.</button>
-                <button class="esq-btn" onclick="calBtn('=')">=</button>
+                <button onclick="calculate(`00`)">00</button>
+                <button onclick="calculate(`0`)">0</button>
+                <button onclick="calculate(`.`)">.</button>
+                <button class="esq-btn" onclick="calculate(`=`)">=</button>
             </div>
         </div>
     </div>
